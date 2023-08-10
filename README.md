@@ -10,6 +10,6 @@ Bem-vindo à Landing Page de uma Plataforma de Investimentos, uma interface cuid
 
 ## Pré-visualização
 
-Você pode conferir uma pré-visualização da landing page clicando <a href="https://landing-page-piggy-bank.vercel.app/">Aqui</a>
+Você pode conferir uma pré-visualização da landing page clicando <a href="https://landing-page-piggy-bank.vercel.app/">AQUI</a>
 
 **Nota:** Esta é uma landing page de exemplo criada para fins ilustrativos.

@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-account {
+  display: flex;
+  list-style: none;
+}
+
+.logo {
+  margin: 1em 4em;
+}
+
+li {
+  margin: 2em;
+}
+
+.hero {
+  background-image: url(assets/bg_hero.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body {
+  background-color: #262016;
+}
+
+.content {
+  margin: 2em 0;
+  display: flex;
+  height: 80vh;
+}
+
+.container-content-img img {
+  margin: 3rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.container-content-img {
+  width: 50%;
+}
+
+.content-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-text p {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  margin: 4em;
+  width: 50%;
+  line-height: 1.5em;
+}
+
+.content-text h1 {
+  margin: 1em;
+  font-family: "Libre Caslon Text", serif;
+  color: #ffffff;
+  font-size: 2em;
+  width: 50%;
+}
+
+.hero-content {
+  color: #ffffff;
+  margin: 6em 5em;
+}
+
+.hero-content p {
+  font-family: "Libre Caslon Text", serif;
+  width: 40%;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0.6em 0;
+}
+
+.hero-content h1 {
+  font-family: "Inter", sans-serif;
+  width: 40%;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 0.5em;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 1em 2em;
+  margin-top: 5em;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #262016;
+}
+
+.nav-account a {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1em;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: border-bottom-width 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.nav-links a {
+  font-family: "Inter", sans-serif;
+  font-size: em;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: border-bottom-width 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px; /* Altura da borda */
+  background-color: #ffffff;
+  transition: width 0.3s ease; /* Animação do crescimento da borda */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Cresce a borda até 100% do comprimento do link */
+}
+
+.sign {
+  padding: 0.5em 1.5em;
+  border: 1px solid #ffffff;
+  border-radius: 0.5em;
+}
+
+.sign:hover {
+  background-color: #ffffff;
+  color: #262016;
+}
+
+.data-section {
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  color: #ffffff;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.datas h1 {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 1.5em 0;
+  height: 1em;
+  width: fit-content;
+}
+
+.datas p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.datas-border {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  padding: 0 12em;
+}
+
+.about-jobs {
+  height: 91vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  height: 100%;
+  background-color: black;
+  width: 80%;
+}
+
+.about-text h1 {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 1.5em 2em;
+  text-align: start;
+}
+.about-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2em;
+  margin: 2em 6em;
+  text-align: start;
+}
+
+.about-img {
+  height: 100vh;
+  width: 50%;
+}
+
+.contact-container {
+    background-image: url(assets/background-contact.png);
+  margin: 10em 0em;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-img img {
+  width: 70%;
+  height: auto;
+}
+
+.contact-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+form input, textarea{
+    padding: 0.5em 0.2em;
+    margin: 0.5em 0;
+    border: 1px solid #ffffff;
+    border-radius: 0.5em;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+form select {
+    padding: 0.5em 0.2em;
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+    color: #525151;
+    font-size: 0.9em;
+}
+
+form h1 {
+    font-family: "Libre Caslon Text", serif;
+    color: #fff;
+    font-size:  2em;
+}
+
+form input, textarea, select, option {
+    background-color: #D9D9D9;
+}
+
+form div {
+    margin: 1em 0;
+    
+}
+
+form textarea {
+    resize: none;
+    color: #000;
+}
+
+.btn-form {
+    margin-top: 0;
+}
+
+.footer-container {
+  font-family: "Inter", sans-serif;
+    background-color: #000000;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container ul {
+    text-decoration: none;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
